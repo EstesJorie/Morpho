@@ -20,11 +20,8 @@ dist-ssr
 *.suo
 *.ntvs*
 *.njsproj
-*.sln
 *.sw?
 .env
 
 __pycache__/*
-src/backend/__pycache__/
-src/backend/.env
-src/backend/env
+
