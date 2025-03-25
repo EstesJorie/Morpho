@@ -1,4 +1,7 @@
-# Morpho Toolkit 
+# Morpho Toolkit (DEV)
+
+This is the DEV version of the Morpho toolkit in which some files or processes might still be work-in-progress. 
+For the most stable version of the toolkit, please clone the main branch of the toolkit.
 
  Welcome to the Morpho toolkit. The Morpho toolkit is designed to streamline and
  speedup your data science workflow. The toolkit features numerous "template" files
