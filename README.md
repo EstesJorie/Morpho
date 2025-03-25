@@ -10,3 +10,9 @@
  To clone the repository, type into your terminal:
  
  > git clone https://github.com/EstesJorie/Morpho.git
+
+## Dependency Installation
+
+To install all of the required dependecies, type into your terminal:
+
+> pip install requirements.txt
