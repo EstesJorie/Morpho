@@ -24,6 +24,7 @@ To install all of the required dependecies, type into your terminal:
 - CONDA
 There are two options for dependcy installation for Conda, the first involves activating the provided .yml file, the second involves creating your own environment with pip and then installing the required dependecies. To activate the provided .yml environment, enter:
 
+> conda env create -f environment.yml
 > conda activate MORPHO
 
 For PIP, type the following commands into your terminal:
