@@ -1,5 +1,6 @@
 # Morpho Toolkit
-![Logo](images/morpho_logo_one.png)
+<img src="images/morpho_logo_one.png" width="50%" />
+
  Welcome to the Morpho toolkit. The Morpho toolkit is designed to streamline and
  speedup your data science workflow. The toolkit features numerous "template" files
  designed to be imported into your current file which then allows you to access
