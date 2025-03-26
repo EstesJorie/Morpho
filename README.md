@@ -1,9 +1,9 @@
 # Morpho Toolkit
 
-<picture>
-  <source srcset="images/morpho_logo_one.png" media="(prefers-color-scheme: light)" class="center">
-  <source srcset="images/morpho_logo_two.png" media="(prefers-color-scheme: dark)" class="center">
-  <img src="images/morpho_logo_one.png" alt="Morpho Logo" width="50%" class="center">
+<picture align="center">
+  <source srcset="images/morpho_logo_one.png" media="(prefers-color-scheme: light)">
+  <source srcset="images/morpho_logo_two.png" media="(prefers-color-scheme: dark)">
+  <img src="images/morpho_logo_one.png" alt="Morpho Logo" width="50%">
 </picture>
 
  Welcome to the Morpho toolkit. The Morpho toolkit is designed to streamline and
