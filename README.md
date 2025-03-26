@@ -16,7 +16,6 @@
  To clone the repository, type into your terminal:
  
  > git clone https://github.com/EstesJorie/Morpho.git
->>>>>>> refs/remotes/origin/main
 
 ## Dependency Installation
 
