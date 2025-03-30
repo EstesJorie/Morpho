@@ -2,8 +2,8 @@
 
 <p align="center">
     <picture>
-      <source srcset="images/morpho_header.png" media="(prefers-color-scheme: light)">
-      <source srcset="images/morpho_light_header.png" media="(prefers-color-scheme: dark)">
+      <source srcset="images/MORPHO_header.png" media="(prefers-color-scheme: light)">
+      <source srcset="images/MORPHO_light_header.png" media="(prefers-color-scheme: dark)">
       <img src="images/morpho_logo_one.png" alt="Morpho Logo" width="50%">
     </picture>
 </p>
