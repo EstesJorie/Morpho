@@ -1,8 +1,8 @@
 # Morpho Toolkit
 
 <picture>
-  <source srcset="images/morpho_logo_one.png" media="(prefers-color-scheme: light)">
-  <source srcset="images/morpho_logo_two.png" media="(prefers-color-scheme: dark)">
+  <source srcset="images/morpho_header.png" media="(prefers-color-scheme: light)">
+  <source srcset="images/morpho_light_header.png" media="(prefers-color-scheme: dark)">
   <img src="images/morpho_logo_one.png" alt="Morpho Logo" width="50%">
 </picture>
 
