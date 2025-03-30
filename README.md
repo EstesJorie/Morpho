@@ -1,10 +1,13 @@
 # Morpho Toolkit
 
-<picture>
-  <source srcset="images/morpho_header.png" media="(prefers-color-scheme: light)">
-  <source srcset="images/morpho_light_header.png" media="(prefers-color-scheme: dark)">
-  <img src="images/morpho_logo_one.png" alt="Morpho Logo" width="50%">
-</picture>
+<p align="center">
+    <picture>
+      <source srcset="images/morpho_header.png" media="(prefers-color-scheme: light)">
+      <source srcset="images/morpho_light_header.png" media="(prefers-color-scheme: dark)">
+      <img src="images/morpho_logo_one.png" alt="Morpho Logo" width="50%">
+    </picture>
+</p>
+
 
  Welcome to the Morpho toolkit. The Morpho toolkit is designed to streamline and
  speedup your data science workflow. The toolkit features numerous "template" files
@@ -16,7 +19,6 @@
  To clone the repository, type into your terminal:
  
  > git clone https://github.com/EstesJorie/Morpho.git
->>>>>>> refs/remotes/origin/main
 
 ## Dependency Installation
 
