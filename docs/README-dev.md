@@ -1,18 +1,31 @@
 # Morpho Toolkit
 
-<p align="center">
-    <picture>
-      <source srcset="images/MORPHO_dev_header.png" media="(prefers-color-scheme: light)">
-      <source srcset="images/MORPHO_dev_light_header.png" media="(prefers-color-scheme: dark)">
-      <img src="images/morpho_logo_one.png" alt="Morpho Logo" width="50%">
-    </picture>
-</p>
+'''
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                   │
+│                                                                                   │
+│     ▄▄▄▄███▄▄▄▄    ▄██████▄     ▄████████    ▄███████▄    ▄█    █▄     ▄██████▄   │
+│   ▄██▀▀▀███▀▀▀██▄ ███    ███   ███    ███   ███    ███   ███    ███   ███    ███  │
+│   ███   ███   ███ ███    ███   ███    ███   ███    ███   ███    ███   ███    ███  │
+│   ███   ███   ███ ███    ███  ▄███▄▄▄▄██▀   ███    ███  ▄███▄▄▄▄███▄▄ ███    ███  │
+│   ███   ███   ███ ███    ███ ▀▀███▀▀▀▀▀   ▀█████████▀  ▀▀███▀▀▀▀███▀  ███    ███  │
+│   ███   ███   ███ ███    ███ ▀███████████   ███          ███    ███   ███    ███  │
+│   ███   ███   ███ ███    ███   ███    ███   ███          ███    ███   ███    ███  │
+│    ▀█   ███   █▀   ▀██████▀    ███    ███  ▄████▀        ███    █▀     ▀██████▀   │
+│                                ███    ███                                         │
+│  ████████▄     ▄████████  ▄█    █▄                                                │
+│  ███   ▀███   ███    ███ ███    ███                                               │
+│  ███    ███   ███    █▀  ███    ███                                               │
+│  ███    ███  ▄███▄▄▄     ███    ███                                               │
+│  ███    ███ ▀▀███▀▀▀     ███    ███                                               │
+│  ███    ███   ███    █▄  ███    ███                                               │
+│  ███   ▄███   ███    ███ ███    ███                                               │
+│  ████████▀    ██████████  ▀██████▀                                                │
+│                                                                                   │
+│                                                                                   │
+└───────────────────────────────────────────────────────────────────────────────────┘
+'''
 
- Welcome to the Morpho toolkit. The Morpho toolkit is designed to streamline and
- speedup your data science workflow. The toolkit features numerous "template" files
- designed to be imported into your current file which then allows you to access
- various functions encapsulating the data science pipeline.
- 
  ## Cloning/Installation 
  
  To clone the repository, type into your terminal:
