@@ -42,4 +42,3 @@ def customID(prefix="ID"):
 
 def resetCounter(): #resets counter
     _saveCounter(0)
-
