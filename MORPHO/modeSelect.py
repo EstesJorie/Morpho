@@ -1,3 +1,5 @@
+# MORPHO/modeSelect.py
+
 from enum import Enum, auto
 from loadingBar import LoadingBar
 from colorama import Fore, Style, init
@@ -272,7 +274,7 @@ def handleModeSelection(mode: Mode):
         print(Fore.RED + "Invalid mode selected.\n")
         logging.error("Invalid mode selected.\n")
 
-def main():
+def modeSelect():
     logging.info("Program started.\n")
     savedMode = loadModeSelection()  #load saved mode selection, if poss
     
@@ -292,4 +294,4 @@ def main():
     saveModeSelection(mode)  
 
 if __name__ == "__main__":
-    main()
+    modeSelect()
