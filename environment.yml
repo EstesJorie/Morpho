@@ -14,7 +14,13 @@ dependencies:
     - scipy
     - statsmodels
     - icecream
+    - colorama>=0.4.4
     - pip
+    - twine
     - pip:
         - plotly
         - xlrd
+        - setuptools
+        - wheel
+        - twine
+        - build

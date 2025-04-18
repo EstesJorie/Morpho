@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+MORPHO/__init__.py
+MORPHO/combineCSV.py
+MORPHO/createConfig.py
+MORPHO/loadingBar.py
+MORPHO/modeSelect.py
+MORPHO/uniqueID.py
+MORPHO.egg-info/PKG-INFO
+MORPHO.egg-info/SOURCES.txt
+MORPHO.egg-info/dependency_links.txt
+MORPHO.egg-info/requires.txt
+MORPHO.egg-info/top_level.txt
