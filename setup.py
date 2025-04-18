@@ -1,10 +1,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="MORPHO",
+    name="MORPHO-toolkit",
     version="0.1.0-dev",
     author="EstesJorie",
     author_email="joe.tresise@aol.com",
+    project_urls={"Source" : "https://github.com/EstesJorie/Morpho", "TrACKER" : "https://github.com/EstesJorie/Morpho/issues"},
     packages=find_packages(),  # This automatically includes all your packages
     install_requires=[
         'pandas==2.0.0',
@@ -32,5 +33,5 @@ setup(
         'License :: OSI Approved :: MIT License',  # License (if applicable)
         'Operating System :: OS Independent',
     ],
-    python_requires='>=3.6',  # Specify the minimum Python version required
+    python_requires='>=3.8',  # Specify the minimum Python version required
 )
