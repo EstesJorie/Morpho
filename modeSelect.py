@@ -86,7 +86,7 @@ def getUserVals():
             print(f"Value of val{valCount}: {val2}\nData type: {type(val2)}")
             valCount += 1
             
-            continueAdding = input("Do you want to add more values (y/n: ").strip().lower()
+            continueAdding = input("Do you want to add more values (y/n): ").strip().lower()
             if continueAdding != 'y':
                 continueAdding = False 
         return values
