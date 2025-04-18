@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="MORPHO-toolkit",
-    version="0.1.1-dev",
+    version="0.1.2-dev",
     author="EstesJorie",
     author_email="joe.tresise@aol.com",
     project_urls={"Source" : "https://github.com/EstesJorie/Morpho", "TrACKER" : "https://github.com/EstesJorie/Morpho/issues"},
