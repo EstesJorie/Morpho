@@ -1,7 +1,28 @@
 from enum import Enum, auto
 from loadingBar import LoadingBar
+from colorama import Fore, Style, init
 import logging
 import json
+import os
+
+logging.basicConfig(filename = 'app.log',
+                    filemode = 'w',
+                    format = '%(asctime)s - %(levelname)s - %(message)s',
+                    level=logging.INFO, 
+                    datefmt='%Y-%m-%d %H:%M:%S')
+
+init(autoreset=True)
+
+CONFIG_DIR = "config"
+if not os.path.exists(CONFIG_DIR):
+    os.makedirs(CONFIG_DIR)
+    logging.info(f"Created directory: {CONFIG_DIR}")
+else:
+    logging.info(f"Directory already exists: {CONFIG_DIR}")
+
+MODE_FILE = os.path.join(CONFIG_DIR, "modeSelection.json")
+
+""" ENUMS """
 
 class Mode(Enum):
     TEST_MODE = auto()
@@ -27,7 +48,8 @@ class Operation(Enum):
     LOGICAL_NOT = auto()
     CONCAT = auto()
     
-logging.basicConfig(level=logging.INFO)
+
+""" FUNCTIONS """
 
 def convertInput(inputVal):
     """
@@ -54,13 +76,13 @@ def getUserVals():
         while continueAdding:
             val1 = input(f"Enter value for val{valCount}: ")
             val1 = convertInput(val1)
-            values[f'val(valCount)'] = val1
+            values[f'val{valCount}'] = val1
             print(f"Value of val{valCount}: {val1}\nData type: {type(val1)}")
             valCount += 1
         
             val2 = input(f"Enter value for val{valCount}: ")
             val2 = convertInput(val2)
-            values[f'val(valCount)'] = val2
+            values[f'val{valCount}'] = val2
             print(f"Value of val{valCount}: {val2}\nData type: {type(val2)}")
             valCount += 1
             
@@ -98,19 +120,21 @@ def getModeSelection():
 
 def saveModeSelection(mode: Mode):
     """
-    Saves the selected mode to a JSON file and logs the action.
+    Saves the selected mode to a JSON file in the config folder, and logs the action.
 
     Args:
         mode (Mode): The selected mode (either TEST_MODE or USER_MODE).
     """
+    os.makedirs(CONFIG_DIR, exist_ok=True) 
+    logging.info(f"Directory created: {CONFIG_DIR}\n")
     modeData = {'mode': mode.name}
-    with open("modeSelection.json", "w") as f:
+    with open(MODE_FILE, "w") as f:
         json.dump(modeData, f)
     logging.info(f"Mode selection saved as {mode.name}\n")
     
 def loadModeSelection():
     try:
-        with open("modeSelection.json", "r") as f:
+        with open(MODE_FILE, "r") as f:
             modeData = json.load(f)
             mode = Mode[modeData['mode']]
             logging.info(f"Loaded saved mode: {mode.name}\n")
@@ -118,14 +142,6 @@ def loadModeSelection():
     except FileNotFoundError:
         logging.warning("No saved mode selection found!\n")
         return None
-
-def handleModeSelection(mode: Mode):
-    if mode == Mode.USER_MODE:
-        print("Running in TEST MODE with preset values.\n")
-    elif mode == Mode.USER_MODE:
-        print("Running in USER MODE with user-defined values.\n")
-    elif mode == Mode.MAINTENANCE_MODE:
-        print("Running in MAINTENANCE MODE.")
 
 def runTest(testName, val1, val2, operation: Operation, duration=5):
     """
@@ -195,69 +211,82 @@ def runTestMode():
         print(f"{key}: {value}\nData type: {type(value)}")
 
     print("=== Performing Test Operations ===\n")
-    loadingDuration = 2 #loading bar duration
+    loadingDuration = .1 #loading bar duration
 
-    operations = [
-        Operation.ADD,
-        Operation.SUBTRACT,
-        Operation.MULTIPLY,
-        Operation.DIVIDE,
-        Operation.MODULUS,
-        Operation.EXPONENT,
-        Operation.FLOOR_DIVIDE,
-        Operation.BITWISE_AND,
-        Operation.BITWISE_OR,
-        Operation.BITWISE_XOR,
-        Operation.BITWISE_NOT,
-        Operation.BITWISE_LEFT_SHIFT,
-        Operation.BITWISE_RIGHT_SHIFT,
-        Operation.LOGICAL_AND,
-        Operation.LOGICAL_OR,
-        Operation.LOGICAL_NOT,
-        Operation.CONCAT
-    ]
+    operations = list(Operation)
+    
+    while True:
+        testOpt = input(
+            "Choose test mode:\n"
+            "1. Full list\n"
+            "2. Half list\n"
+            "3. Custom\n"
+            "To see full operation list, press 'e': "
+        ).strip().lower()
 
-    testOpt = input("Choose test mode:`n1. Full list\n2. Half list\n3. Custom\n")
+        if testOpt == 'e':
+            print("\n============== Available Operations ==============")
+            for operation in operations:
+                print(f"- {operation.name}")
+            print("==================================================\n")
+            continue  # go back to asking for a valid option
+        break  # exit loop if it's not 'e'
+
     if testOpt == '1':
-        for operation in operations:
-            try:
-                result = runTest(operation.name, testVals['val1'], testVals['val2'], operation, loadingDuration)
-                print(f"Result of {operation.name}: {result}\n")
-            except Exception as e:
-                print(f"Error during operation {operation.name}: {e}\n")
+        selectedOps = operations
     elif testOpt == '2':
-        for operation in operations[:len(operations)//2]:
-            try:
-                result = runTest(operation.name, testVals['val1'], testVals['val2'], operation, loadingDuration)
-                print(f"Result of {operation.name}: {result}\n")
-            except Exception as e:
-                print(f"Error during operation {operation.name}: {e}\n")
+        selectedOps = operations[:len(operations) // 2]
     elif testOpt == '3':
         customOperations = input("Enter custom operations (comma-separated): ").strip().split(',')
+        selectedOps = []
         for operation in customOperations:
             operation = operation.strip().upper()
             if hasattr(Operation, operation):
-                try:
-                    result = runTest(operation, testVals['val1'], testVals['val2'], Operation[operation], loadingDuration)
-                    print(f"Result of {operation}: {result}\n")
-                except Exception as e:
-                    print(f"Error during operation {operation}: {e}\n")
+                selectedOps.append(Operation[operation])
             else:
                 print(f"Invalid operation: {operation}\n")
     else:
+        logging.info(f"ERROR - Invalid test mode selection: {testOpt}\n")
         print("Invalid test mode selection.\n")
         return
+
+    for operation in selectedOps:
+        try:
+            result = runTest(operation.name, testVals['val1'], testVals['val2'], operation, loadingDuration)
+            print(f"Result of {operation.name}: {result}\n")
+        except Exception as e:
+            logging.error(f"ERROR - during operation {operation.name}: {e}\n")
+            print(f"Error during operation {operation.name}: {e}\n")
+
+def handleModeSelection(mode: Mode):
+    if mode == Mode.TEST_MODE:
+        print("Running in TEST MODE with preset values.\n")
+        runTestMode()
+    elif mode == Mode.USER_MODE:
+        print("Running in USER MODE with user-defined values.\n")
+        userVals = getUserVals()
+        print(f"User values: {userVals}\n")
+    elif mode == Mode.MAINTENANCE_MODE:
+        print("Running in MAINTENANCE MODE.")
+    else:
+        print(Fore.RED + "Invalid mode selected.\n")
+        logging.error("Invalid mode selected.\n")
+
 def main():
+    logging.info("Program started.\n")
     savedMode = loadModeSelection()  #load saved mode selection, if poss
     
     if savedMode:
         userSelect = input(f"Saved mode detected. Would you like to use the saved mode ({savedMode.name})? (y/n): ").strip().lower()
         if userSelect == 'y':
             mode = savedMode
+            logging.info(f"Using saved mode: {mode.name}\n")
         else:
-            mode = getModeSelection() 
+            mode = getModeSelection()
+            logging.info(f"Using new mode: {mode.name}\n") 
     else:
         mode = getModeSelection() 
+        logging.info(f"Using mode (no prior): {mode.name}\n")
     
     handleModeSelection(mode) 
     saveModeSelection(mode)  

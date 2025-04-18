@@ -20,4 +20,4 @@ class LoadingBar:
             sys.stdout.write('\r' + bar)  
             sys.stdout.flush()
 
-        print("\nLoading complete!") 
+        print("\nLoading complete!\n") 
