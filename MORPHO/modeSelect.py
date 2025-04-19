@@ -50,14 +50,12 @@ class Operation(Enum):
     LOGICAL_NOT = auto()
     CONCAT = auto()
     
-
 """ FUNCTIONS """
 
 def convertInput(inputVal):
     """
     Converts input to most appropriate data type
     """
-    
     if inputVal.isdigit(): #check if its a number (int)
         return int(inputVal)
     try:

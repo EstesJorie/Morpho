@@ -1,5 +1,15 @@
 # Morpho Toolkit
 
+[![PyPI version](https://img.shields.io/pypi/v/MORPHO-toolkit?label=PyPI)](https://pypi.org/project/MORPHO-toolkit/)
+![Python versions](https://img.shields.io/pypi/pyversions/MORPHO-toolkit)
+![![License](https://img.shields.io/github/license/EstesJorie/Morpho)](https://github.com/EstesJorie/Morpho/blob/main/LICENSE)
+
+[![Issues](https://img.shields.io/github/issues/EstesJorie/Morpho)](https://github.com/EstesJorie/Morpho/issues)
+
+[![Last Commit](https://img.shields.io/github/last-commit/EstesJorie/Morpho)](https://github.com/EstesJorie/Morpho/commits/main)
+
+
+
 <p align="center">
     <img src="images/MORPHO_light_header.png" alt="Morpho Header" width="50%">
 </p>
