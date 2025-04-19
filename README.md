@@ -7,6 +7,7 @@
 ![GitHub language top](https://img.shields.io/github/languages/top/EstesJorie/Morpho)
 [![License](https://img.shields.io/github/license/EstesJorie/Morpho)](https://github.com/EstesJorie/Morpho/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/EstesJorie/Morpho)](https://github.com/EstesJorie/Morpho/issues)
+![Commits](https://badgen.net/github/commits/EstesJorie/Morpho)
 [![Last Commit](https://img.shields.io/github/last-commit/EstesJorie/Morpho)](https://github.com/EstesJorie/Morpho/commits/main)
 
 
