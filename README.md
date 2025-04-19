@@ -1,7 +1,12 @@
 # Morpho Toolkit
+![Python](https://img.shields.io/badge/language-python-blue?logo=python&logoColor=white)
 
 [![PyPI version](https://img.shields.io/pypi/v/MORPHO-toolkit?label=PyPI)](https://pypi.org/project/MORPHO-toolkit/)
 ![Python versions](https://img.shields.io/pypi/pyversions/MORPHO-toolkit)
+![Status](https://img.shields.io/badge/status-in%20development-orange)
+![Downloads](https://img.shields.io/pypi/dm/MORPHO-toolkit)
+![Requirements](https://img.shields.io/librariesio/release/pypi/MORPHO-toolkit)
+![GitHub language top](https://img.shields.io/github/languages/top/EstesJorie/Morpho)
 [![License](https://img.shields.io/github/license/EstesJorie/Morpho)](https://github.com/EstesJorie/Morpho/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/EstesJorie/Morpho)](https://github.com/EstesJorie/Morpho/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/EstesJorie/Morpho)](https://github.com/EstesJorie/Morpho/commits/main)
