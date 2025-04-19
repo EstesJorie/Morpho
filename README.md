@@ -4,7 +4,6 @@
 [![PyPI version](https://img.shields.io/pypi/v/MORPHO-toolkit?label=PyPI)](https://pypi.org/project/MORPHO-toolkit/)
 ![Python versions](https://img.shields.io/pypi/pyversions/MORPHO-toolkit)
 ![Status](https://img.shields.io/badge/status-in%20development-orange)
-![Release Downloads](https://img.shields.io/github/downloads/EstesJorie/Morpho/v0.1.3-dev/total)
 ![Requirements](https://img.shields.io/librariesio/release/pypi/MORPHO-toolkit)
 ![GitHub language top](https://img.shields.io/github/languages/top/EstesJorie/Morpho)
 [![License](https://img.shields.io/github/license/EstesJorie/Morpho)](https://github.com/EstesJorie/Morpho/blob/main/LICENSE)
