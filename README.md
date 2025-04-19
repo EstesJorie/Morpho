@@ -1,6 +1,5 @@
 # Morpho Toolkit
 ![Python](https://img.shields.io/badge/language-python-blue?logo=python&logoColor=white)
-
 [![PyPI version](https://img.shields.io/pypi/v/MORPHO-toolkit?label=PyPI)](https://pypi.org/project/MORPHO-toolkit/)
 ![Python versions](https://img.shields.io/pypi/pyversions/MORPHO-toolkit)
 ![Status](https://img.shields.io/badge/status-in%20development-orange)
