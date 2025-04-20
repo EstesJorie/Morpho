@@ -1,7 +1,7 @@
 # MORPHO/modeSelect.py
 
 from enum import Enum, auto
-from loadingBar import LoadingBar
+from .loadingBar import LoadingBar
 from colorama import Fore, Style, init
 import logging
 import json

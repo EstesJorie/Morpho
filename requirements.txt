@@ -11,3 +11,4 @@ statsmodels
 icecream
 plotly
 xlrd
+pytest
