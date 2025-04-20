@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="MORPHO-toolkit",
-    version="0.1.3-dev",
+    version="0.1.4-dev",
     author="EstesJorie",
     author_email="joe.tresise@aol.com",
     project_urls={"Source" : "https://github.com/EstesJorie/Morpho", "TrACKER" : "https://github.com/EstesJorie/Morpho/issues"},
@@ -19,6 +19,7 @@ setup(
         'statsmodels',
         'icecream',
         'colorama>=0.4.4',
+        'pytest'
     ],
     extras_require={
         'dev': [

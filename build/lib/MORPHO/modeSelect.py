@@ -1,7 +1,7 @@
 # MORPHO/modeSelect.py
 
 from enum import Enum, auto
-from loadingBar import LoadingBar
+from .loadingBar import LoadingBar
 from colorama import Fore, Style, init
 import logging
 import json
@@ -50,14 +50,12 @@ class Operation(Enum):
     LOGICAL_NOT = auto()
     CONCAT = auto()
     
-
 """ FUNCTIONS """
 
 def convertInput(inputVal):
     """
     Converts input to most appropriate data type
     """
-    
     if inputVal.isdigit(): #check if its a number (int)
         return int(inputVal)
     try:

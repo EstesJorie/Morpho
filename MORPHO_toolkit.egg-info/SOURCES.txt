@@ -17,3 +17,8 @@ MORPHO_toolkit.egg-info/requires.txt
 MORPHO_toolkit.egg-info/top_level.txt
 images/MORPHO_header.png
 images/MORPHO_light_header.png
+tests/test_combineCSV.py
+tests/test_createConfig.py
+tests/test_loadingBar.py
+tests/test_modeSelect.py
+tests/test_uniqueID.py
