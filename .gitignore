@@ -26,3 +26,5 @@ dist-ssr
 __pycache__/*
 counter.txt
 /config/
+tests/__pycache__
+MORPHO/__pycache__

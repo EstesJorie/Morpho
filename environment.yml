@@ -17,6 +17,7 @@ dependencies:
     - colorama>=0.4.4
     - pip
     - twine
+    - pytest
     - pip:
         - plotly
         - xlrd
