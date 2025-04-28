@@ -5,3 +5,4 @@ from .createConfig import createConfigFolder
 from .loadingBar import LoadingBar
 from .modeSelect import modeSelect
 from .uniqueID import *
+from .playBeep import playBeep
