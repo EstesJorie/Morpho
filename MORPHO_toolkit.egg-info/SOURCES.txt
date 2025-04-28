@@ -9,6 +9,7 @@ MORPHO/combineCSV.py
 MORPHO/createConfig.py
 MORPHO/loadingBar.py
 MORPHO/modeSelect.py
+MORPHO/playBeep.py
 MORPHO/uniqueID.py
 MORPHO_toolkit.egg-info/PKG-INFO
 MORPHO_toolkit.egg-info/SOURCES.txt
