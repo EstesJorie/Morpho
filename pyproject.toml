@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "MORPHO-toolkit"
-version = "0.2.0-dev"
+version = "0.2.1-dev"
 description = "The MORPHO data-science toolkit."
 readme = "README.md"
 requires-python = ">=3.8"
@@ -43,3 +43,7 @@ dev = [
 
 [tool.setuptools]
 packages = ["MORPHO"]  # You can also explicitly list your package directory here
+
+[project.urls]
+"Source" = "https://github.com/EstesJorie/Morpho"
+"Tracker" = "https://github.com/EstesJorie/Morpho/issues"

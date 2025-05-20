@@ -38,3 +38,8 @@ def customID(prefix="ID"):
 
 def resetCounter(): #resets counter
     _saveCounter(0)
+
+if __name__ == "__main__":
+    print("Custom ID with prefix':", customID(prefix="TAN"))
+    
+    resetCounter()  # Reset the counter for demonstration
