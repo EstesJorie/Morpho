@@ -3,8 +3,8 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "MORPHO-toolkit"
-version = "0.2.1-dev"
+name = "morpho-toolkit"
+version = "0.2.1-dev1"
 description = "The MORPHO data-science toolkit."
 readme = "README.md"
 requires-python = ">=3.8"
@@ -33,6 +33,7 @@ dependencies = [
     "icecream",
     "colorama>=0.4.4",
     "pytest",
+    "build",
 ]
 
 [project.optional-dependencies]

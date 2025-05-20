@@ -1,6 +1,6 @@
-Metadata-Version: 2.1
-Name: MORPHO-toolkit
-Version: 0.2.1.dev0
+Metadata-Version: 2.4
+Name: morpho-toolkit
+Version: 0.2.1.dev1
 Summary: The MORPHO data-science toolkit.
 Author: EstesJorie
 Author-email: EstesJorie <joe.tresise@aol.com>
@@ -27,9 +27,13 @@ Requires-Dist: statsmodels
 Requires-Dist: icecream
 Requires-Dist: colorama>=0.4.4
 Requires-Dist: pytest
+Requires-Dist: build
 Provides-Extra: dev
 Requires-Dist: plotly; extra == "dev"
 Requires-Dist: xlrd; extra == "dev"
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-python
 
 # Morpho Toolkit
 ![Python](https://img.shields.io/badge/language-python-blue?logo=python&logoColor=white)
