@@ -10,7 +10,7 @@ setup(
     install_requires=[
         'pandas==2.0.0',
         'glob2==0.7',
-        'tqdm==4.62.0',
+        'tqdm>=4.66.3',
         'numpy',
         'matplotlib',
         'seaborn',
@@ -25,6 +25,7 @@ setup(
         'dev': [
             'plotly',
             'xlrd',
+            'tqdm>=4.66.3'
         ],
         # 'logging' and 'json' are part of the Python standard library, so no need to list them
     },
