@@ -3,7 +3,6 @@ MANIFEST.in
 README.md
 pyproject.toml
 requirements.txt
-setup.py
 MORPHO/__init__.py
 MORPHO/combineCSV.py
 MORPHO/createConfig.py
