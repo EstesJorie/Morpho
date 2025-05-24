@@ -21,8 +21,8 @@ classifiers = [
 ]
 
 dependencies = [
-    "pandas==2.0.0",
-    "glob2==0.7",
+    "pandas",
+    "glob2",
     "tqdm==4.66.3",
     "numpy",
     "matplotlib",
@@ -31,7 +31,7 @@ dependencies = [
     "scipy",
     "statsmodels",
     "icecream",
-    "colorama>=0.4.4",
+    "colorama",
     "pytest",
     "build",
 ]

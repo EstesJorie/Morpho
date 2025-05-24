@@ -31,3 +31,12 @@ def combineCSVFiles(input_path, output_file):
     print(f"Combined CSV saved to: {output_file}") 
     print(f"Total rows in combined file: {len(combined_df)}")
 
+if __name__ == "__main__":
+    input_path = input("Enter the path to the directory containing CSV files: ")
+    output_file = input("Enter the name of the output CSV file (e.g., combined.csv): ")
+    
+    try:
+        combineCSVFiles(input_path, output_file)
+    except Exception as e:
+        print(f"An error occurred: {e}")
+

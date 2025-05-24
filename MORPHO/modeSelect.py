@@ -1,7 +1,7 @@
 # MORPHO/modeSelect.py
 
 from enum import Enum, auto
-from .loadingBar import LoadingBar
+from loadingBar import LoadingBar
 from colorama import Fore, Style, init
 import logging
 import json
@@ -211,7 +211,7 @@ def runTestMode():
         print(f"{key}: {value}\nData type: {type(value)}")
 
     print("=== Performing Test Operations ===\n")
-    loadingDuration = .1 #loading bar duration
+    loadingDuration = 1 #loading bar duration (in seconds)
 
     operations = list(Operation)
     
