@@ -1,8 +1,7 @@
 Metadata-Version: 2.4
 Name: morpho-toolkit
-Version: 0.2.1.dev1
+Version: 0.2.2.dev0
 Summary: The MORPHO data-science toolkit.
-Author: EstesJorie
 Author-email: EstesJorie <joe.tresise@aol.com>
 License: MIT
 Project-URL: Source, https://github.com/EstesJorie/Morpho
@@ -15,8 +14,8 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 License-File: LICENSE
-Requires-Dist: pandas==2.0.0
-Requires-Dist: glob2==0.7
+Requires-Dist: pandas
+Requires-Dist: glob2
 Requires-Dist: tqdm==4.66.3
 Requires-Dist: numpy
 Requires-Dist: matplotlib
@@ -25,15 +24,13 @@ Requires-Dist: scikit-learn
 Requires-Dist: scipy
 Requires-Dist: statsmodels
 Requires-Dist: icecream
-Requires-Dist: colorama>=0.4.4
+Requires-Dist: colorama
 Requires-Dist: pytest
 Requires-Dist: build
 Provides-Extra: dev
 Requires-Dist: plotly; extra == "dev"
 Requires-Dist: xlrd; extra == "dev"
-Dynamic: author
 Dynamic: license-file
-Dynamic: requires-python
 
 # Morpho Toolkit
 ![Python](https://img.shields.io/badge/language-python-blue?logo=python&logoColor=white)
