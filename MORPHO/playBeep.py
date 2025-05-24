@@ -1,6 +1,5 @@
 import os
 import platform
-import winsound
 
 def play_beep():
     # Get the current operating system
@@ -12,7 +11,9 @@ def play_beep():
     elif current_os == "darwin": # macOS
         os.system("osascript -e 'beep'")
 
-    elif current_os == "windows":
-        winsound.MessageBeep() #requires windsound
     else:
         print(f"Unsupported OS: {current_os}")
+
+if __name__ == "__main__":
+    play_beep()
+    print("Beep sound played successfully.")

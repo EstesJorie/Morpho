@@ -21,3 +21,16 @@ class LoadingBar:
             sys.stdout.flush()
 
         print("\nLoading complete!\n") 
+
+if __name__ == "__main__":
+    defaultDuration = 5.0  # Default duration in seconds
+    defaultLength = 40    # Default length
+    
+    durationInput = input("Enter the duration for the loading bar (in seconds): ")
+    lengthInput = input("Enter the length of the loading bar: ")
+    
+    duration = float(durationInput) if durationInput else defaultDuration
+    length = int(lengthInput) if lengthInput else defaultLength
+    
+    loading_bar = LoadingBar(duration, length)
+    loading_bar.display()
